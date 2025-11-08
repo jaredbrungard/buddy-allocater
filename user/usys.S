@@ -105,3 +105,8 @@ uptime:
  li a7, SYS_uptime
  ecall
  ret
+.global buddytest
+buddytest:
+ li a7, SYS_buddytest
+ ecall
+ ret
