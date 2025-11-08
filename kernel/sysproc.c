@@ -105,3 +105,12 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+
+// At the end of kernel/sysproc.c
+
+uint64
+sys_buddytest(void)
+{
+  buddy_test();
+  return 0;
+}

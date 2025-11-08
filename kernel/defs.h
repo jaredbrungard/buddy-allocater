@@ -60,6 +60,13 @@ void*           kalloc(void);
 void            kfree(void *);
 void            kinit(void);
 
+// buddy.c
+void            buddyinit(void);
+void*           buddy_alloc(uint64);
+void            buddy_free(void*);
+void            buddy_print(void*);
+void            buddy_test(void);
+
 // log.c
 void            initlog(int, struct superblock*);
 void            log_write(struct buf*);
